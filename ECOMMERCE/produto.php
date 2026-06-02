@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página do Produto</title>
-    <link rel="stylesheet" href="https://unpkg.com/bamboo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css" type="text/css">
 </head>
 <body>
     <div class="container">
@@ -13,11 +13,10 @@
         <main>
             <section id="produto_detalhes">
                 <div>
-                    <img src="#" alt="Imagem do Produto" width="250" height="250">
-                    <div>
-                        <img src="#" alt="Miniatura 1" width="50" height="50">
-                        <img src="#" alt="Miniatura 2" width="50" height="50">
-                    </div>
+                    <div style="width: 250px; height: 250px; background-color: lightgray;"></div>
+                    <br>
+                    <div style="width: 50px; height: 50px; display: inline-block; background-color: lightgray;"></div>
+                    <div style="width: 50px; height: 50px; display: inline-block; background-color: lightgray;"></div>
                 </div>
                 <div>
                     <h2>Nome do Produto</h2>
