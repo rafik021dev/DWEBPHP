@@ -1,78 +1,20 @@
+<?php include_once 'componentes.php'; ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página do Produto</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sakura.css/css/sakura.css" type="text/css">
-</head>
+<?php include 'head.php'; ?>
 <body>
     <div class="container">
-        <?php include "cabecalho.php"; ?>
+        <?php include 'cabecalho.php'; ?>
 
-        <main>
-            <section id="produto_detalhes">
-                <div>
-                    <div style="width: 250px; height: 250px; background-color: lightgray;"></div>
-                    <br>
-                    <div style="width: 50px; height: 50px; display: inline-block; background-color: lightgray;"></div>
-                    <div style="width: 50px; height: 50px; display: inline-block; background-color: lightgray;"></div>
-                </div>
-                <div>
-                    <h2>Nome do Produto</h2>
-                    <p>Descrição do produto em linhas. Funcionalidades, especificações, etc.</p>
-                    <button type="button">COMPRAR</button>
-                </div>
-            </section>
-
+        <main style="padding-top: 20px;">
+            <?php include 'produto_info.php'; ?>
             <hr>
-
-            <section id="avaliacoes">
-                <h3>AVALIAÇÕES</h3>
-                <table border="1">
-                    <thead>
-                        <tr>
-                            <th>Usuário</th>
-                            <th>Nota</th>
-                            <th>Opinião</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Cliente A</td>
-                            <td>5/5</td>
-                            <td>Excelente!</td>
-                        </tr>
-                        <tr>
-                            <td>Cliente B</td>
-                            <td>4/5</td>
-                            <td>Muito bom, mas demorou.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
+            <?php include 'secao_avaliacoes.php'; ?>
             <hr>
-
-            <section id="comentarios">
-                <h3>DÚVIDAS / COMENTÁRIOS</h3>
-                <form action="" method="post">
-                    <div>
-                        <label for="nome">NOME:</label><br>
-                        <input type="text" id="nome" name="nome">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="comentario">COMENTÁRIO:</label><br>
-                        <textarea id="comentario" name="comentario" rows="4" cols="40"></textarea>
-                    </div>
-                    <br>
-                    <button type="submit">OK</button>
-                </form>
-            </section>
+            <?php include 'secao_comentarios.php'; ?>
         </main>
 
-        <?php include "rodape.php"; ?>
+        <?php include 'rodape.php'; ?>
     </div>
 </body>
 </html>
